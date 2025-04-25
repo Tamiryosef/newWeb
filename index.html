@@ -1,113 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Five Great Team Anti-Choking Device</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0077cc;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #0077cc;
-        }
-        ul {
-            margin-left: 1.5rem;
-        }
-        blockquote {
-            margin: 2rem 0;
-            padding: 1rem;
-            background-color: #eef6ff;
-            border-left: 4px solid #0077cc;
-            font-style: italic;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-        .cta {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 1rem 2rem;
-            background-color: #0077cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .cta:hover {
-            background-color: #005fa3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five Great Team - ההגנה שלך מפני חנק</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Heebo', sans-serif;
+      background-color: #0c1c2c;
+      color: #fff;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    video.background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      font-size: 16px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0 0 20px 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .buttons a {
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .buy-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .info-btn {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .hero-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .hero-image {
+      max-width: 400px;
+      margin: 20px;
+    }
+
+    .bottom-text {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 30px 0;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero-section {
+        flex-direction: column;
+      }
+      .hero {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Introducing the Next Generation in Emergency Care</h1>
-        <p><strong>The Five Great Team Anti-Choking Device</strong></p>
-        <p>Because Every Second Counts. Every Life Matters.</p>
-    </header>
+<!-- חלון וידאו צדדי -->
+<div style="position: fixed; bottom: 20px; left: 20px; width: 360px; height: 202px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; z-index: 999; background: black;">
+  <video width="100%" height="100%" controls>
+    <source src="tamir_v.mp4" type="video/mp4">
+    הדפדפן שלך לא תומך בניגון וידאו.
+  </video>
+</div>
 
-    <section>
-        <p>
-            Choking is one of the leading causes of accidental death worldwide — and it can happen to anyone, anywhere, at any time.
-            That’s why we’ve developed the <strong>Five Great Team Anti-Choking Device</strong>, a revolutionary solution designed to save lives in seconds when every breath matters.
-        </p>
+<header>
+  <div class="logo">Five Great Team</div>
+  <nav>
+    <a href="#">על המוצר</a>
+    <a href="#">דרך השימוש</a>
+    <a href="#">רק שימוש</a>
+  </nav>
+</header>
 
-        <p>
-            Whether in homes, schools, restaurants, or public spaces, <strong>Five Great Team</strong> empowers ordinary people to act decisively
-            in the face of a life-threatening emergency — with no medical training required.
-        </p>
+<section class="hero-section">
+  <div class="hero">
+    <h1>ההגנה שלך מפני חנק</h1>
+    <p>מכשיר חדשני וראשוני וקל לשימוש<br>להצלת חיי אדם ממצבי חנק</p>
+    <div class="buttons">
+      <a href="#" class="buy-btn">קנה עכשיו</a>
+      <a href="#" class="info-btn">למד עוד</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="ChatGPT Image Apr 23, 2025, 06_16_18 PM.png" alt="Five Great Team Product" style="max-width: 100%; border-radius: 8px;">
+  </div>
+</section>
 
-        <h2>Key Features:</h2>
-        <ul>
-            <li><strong>Innovative Technology –</strong> Engineered with precision to create a powerful yet controlled suction force, LifeSafe quickly removes airway obstructions in children and adults alike.</li>
-            <li><strong>Compact & Easy to Use –</strong> Lightweight, portable, and user-friendly. Just place, pull, and save. It's that simple.</li>
-            <li><strong>Reliable in Critical Moments –</strong> Built to perform in high-stress situations, giving you peace of mind when it matters most.</li>
-            <li><strong>Certified & Tested –</strong> Meets rigorous safety and quality standards, trusted by first responders and families around the world.</li>
-        </ul>
-
-        <h2>Who Needs Five Great Team?</h2>
-        <ul>
-            <li>Parents and caregivers</li>
-            <li>Schools and kindergartens</li>
-            <li>Elderly care homes</li>
-            <li>Restaurants and food service providers</li>
-            <li>Public institutions and workplaces</li>
-        </ul>
-
-        <h2>Why Choose Five Great Team?</h2>
-        <p>
-            Because a life can be saved in under 10 seconds — and no one should have to wait for an ambulance when help is already in their hands.
-        </p>
-
-        <blockquote>
-            “We used Five Great Team to save a child during lunch. We’ll never go without it again.” – A grateful teacher
-        </blockquote>
-
-        <p><strong>Be Prepared. Be a Hero. Save a Life.</strong></p>
-        <a class="cta" href="#">Get Your Five Great Team Anti-Choking Device Today</a>
-    </section>
-
-    <footer>
-        &copy; 2025 Five Great Team. All rights reserved.
-    </footer>
+<div class="bottom-text">
+  לפעולה נוחה ומהירה
+</div>
 
 </body>
 </html>
